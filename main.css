@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f5f5f5;
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+}
+
+.left-side{
+  width: 36%;
+  height: 100%;
+  position: relative;
+  background: url(hero-image.jpg);
+  background-size: cover;
+  padding-top: 10rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  .logo-container{
+    background-color: rgba(74, 141, 223, 0.7);
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  
+    > img{
+      width: 12%;
+    }
+  }
+
+  p{
+    text-align: center;
+    margin: auto auto 0.5rem auto;
+    font-size: 0.7rem;
+
+    a{
+      color: white;
+    }
+  }
+}/* left side */
+
+.right-side{
+  width: 64%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+   p{
+    padding: 0 25rem 3rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+   form{
+    width: 100%;
+
+    > p{
+      padding: 1.5rem 2.5rem;
+      background-color: #FFFFFF;
+    }
+
+     .input-container{
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #FFFFFF;
+      padding: 0 0 0 2.5rem;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.103);
+      
+       label{
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        width: 35%;
+
+         input{
+          height: 2rem;
+          font-size: 1.1rem;
+          margin: 0.1rem 0 1.5rem 0;
+          padding: 0 0.5rem;
+          border: 1px solid #E5E7EB;
+        }
+
+        input:focus{
+          outline-color: blue;
+        }
+
+        input[type='password']:invalid{
+          border: 1px solid red;
+        }
+      }
+    }
+
+    button{
+      padding: 0.7rem 3rem;
+      margin: 1.5rem 2.5rem;
+      font-size: 1rem;
+      background-color: #596D48;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer
+    }
+  }
+
+  p:last-of-type{
+    font-size: 0.9rem;
+
+    a{
+      font-size: 0.8;
+      color: #596D48;
+      text-decoration: none;
+    }
+
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}/* right-side */
+
